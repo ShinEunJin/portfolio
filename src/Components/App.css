@@ -1,0 +1,35 @@
+body {
+  overflow: hidden;
+}
+
+.transition-group {
+  position: relative;
+}
+
+.text-appear,
+.test-enter {
+  opacity: 0;
+  transform: rotateZ(90deg);
+  transform-origin: bottom right;
+}
+
+.test-appear-active,
+.test-enter-active {
+  opacity: 1;
+  transform: rotateZ(0);
+  transition: all 1.2s ease-out;
+  transform-origin: bottom right;
+}
+
+.test-exit {
+  opacity: 1;
+  transform: rotateZ(0);
+  transform-origin: bottom right;
+}
+
+.test-exit-active {
+  opacity: 0;
+  transform: rotateZ(-90deg);
+  transform-origin: bottom right;
+  transition: all 1.2s ease-out;
+}

@@ -1,22 +1,19 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 
 import GlobalStyle from "../Components/GlobalStyle"
+import IndexBoard from "./IndexBoard"
 import LandingPage from "../Pages/LandingPage/LandingPage"
+import "./App.css"
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Redirect to="*" from="/" />
-      </Switch>
-      <GlobalStyle />
-    </Router>
+    <>
+      <Router>
+        <IndexBoard />
+        <LandingPage />
+        <GlobalStyle />
+      </Router>
+    </>
   )
 }
 

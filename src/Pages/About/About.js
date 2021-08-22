@@ -1,18 +1,25 @@
 import React from "react"
+import styled from "styled-components"
+
+const Container = styled.div`
+  border-top-left-radius: 100%;
+  background-color: pink;
+  width: 100%;
+  height: 100vh;
+`
+
+/* const Center = styled.div`
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+` */
 
 function About() {
-  return (
-    <div>
-      <div>신입 개발자 신은진 입니다</div>
-      <div>
-        20년 여름, 군대를 제대하고 개발에 뛰어들었습니다. 부대에서 책을 읽다
-        블록체인에 대해서 알게되었고 관련 도서를 찾아보며 관심을 많이
-        가졌습니다. 이 신기술의 힘을 더욱 더 이해하기 위해서 직접 개발에
-        뛰어들었고 개발에 테크트리가 있다는걸 알게 되고 그에 맞게 기본적인
-        마크업 언어부터 시작하다 리액트를 접하고 프런트의 길을 걷게 되었습니다.
-      </div>
-    </div>
-  )
+  return <Container></Container>
 }
 
 export default About
