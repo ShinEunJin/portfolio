@@ -1,34 +1,44 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 
-const innerHeight = window.innerHeight
-
-const Container = styled.div`
-  display: flex;
-  /* background-color: rgba(173, 163, 255, 0.1); */
-  background-color: yellow;
-  width: ${(props) => props.innerHeight}px;
-  height: ${(props) => props.innerHeight}px;
-  border-top-left-radius: ${(props) => props.innerHeight}px;
-  margin: 0 auto;
-  position: relative;
+const Greeting = styled.div`
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  padding: 200px;
 `
 
-const Center = styled.div`
-  background-color: white;
-  width: 300px;
-  height: 300px;
-  border-top-left-radius: 300px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+const SubGreeting = styled.div`
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  padding: 200px;
 `
 
 function Home() {
+  const [start, setStart] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setStart(true)
+    }, 1200)
+  }, [])
+
   return (
-    <Container innerHeight={innerHeight}>
-      <Center>gd</Center>
-    </Container>
+    <div>
+      <Fade when={start} left distance="10px" duration={800}>
+        <Greeting>
+          안녕하십니까, <br /> 신입 개발자 신은진입니다
+        </Greeting>
+      </Fade>
+      <Fade delay={500} when={start} left distance="10px" duration={800}>
+        <SubGreeting>
+          아직은 개발자가 아닌 코더 일지라도 <br />
+          성장에 대한 열망만큼은 <br /> 최정상급 개발자입니다
+        </SubGreeting>
+      </Fade>
+    </div>
   )
 }
 

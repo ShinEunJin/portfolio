@@ -2,7 +2,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import GlobalStyle from "../Components/GlobalStyle"
 import IndexBoard from "./IndexBoard"
-import LandingPage from "../Pages/LandingPage/LandingPage"
+import Transition from "./Transition"
 import "./App.css"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <Router>
         <IndexBoard />
-        <LandingPage />
+        <Transition />
         <GlobalStyle />
       </Router>
     </>

@@ -1,35 +1,24 @@
-body {
-  overflow: hidden;
-}
-
-.transition-group {
-  position: relative;
-}
-
-.text-appear,
 .test-enter {
   opacity: 0;
-  transform: rotateZ(90deg);
-  transform-origin: bottom right;
+  transform: rotateZ(60deg);
+  transform-origin: 1007px 1007px;
 }
 
-.test-appear-active,
 .test-enter-active {
   opacity: 1;
   transform: rotateZ(0);
-  transition: all 1.2s ease-out;
-  transform-origin: bottom right;
+  transition: all 1.2s ease-in-out;
+  transform-origin: 1007px 1007px;
 }
 
 .test-exit {
   opacity: 1;
-  transform: rotateZ(0);
-  transform-origin: bottom right;
+  transform-origin: 1007px 1007px;
 }
 
 .test-exit-active {
   opacity: 0;
-  transform: rotateZ(-90deg);
-  transform-origin: bottom right;
-  transition: all 1.2s ease-out;
+  transform: rotateZ(-60deg);
+  transition: all 1.2s ease-in-out;
+  transform-origin: 1007px 1007px;
 }
