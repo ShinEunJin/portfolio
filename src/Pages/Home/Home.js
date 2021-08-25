@@ -32,7 +32,7 @@ function Home() {
           안녕하십니까, <br /> 신입 개발자 신은진입니다
         </Greeting>
       </Fade>
-      <Fade delay={500} when={start} left distance="10px" duration={800}>
+      <Fade delay={200} when={start} left distance="10px" duration={800}>
         <SubGreeting>
           아직은 개발자가 아닌 코더 일지라도 <br />
           성장에 대한 열망만큼은 <br /> 최정상급 개발자입니다

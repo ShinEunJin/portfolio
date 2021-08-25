@@ -66,7 +66,7 @@ function IndexBoard(props) {
   return (
     <Container>
       <ImgColumn>
-        <Img src="img/노알라.jpg" />
+        <Img src="img/원재.png" />
         <Name>SHIN EUN JIN</Name>
         <SubName>
           <span style={{ color: "green" }}>M</span>

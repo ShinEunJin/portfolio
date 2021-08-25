@@ -45,7 +45,7 @@ function About() {
           <br /> 물러서지 않습니다.
         </Will>
       </Fade>
-      <Fade delay={500} when={start} right distance="10px" duration={800}>
+      <Fade delay={300} when={start} right distance="10px" duration={800}>
         <WillText>
           2020년 여름 군대를 제대하고 개발에 뛰어들었습니다. 군대에서 블록체인의
           잠재력에 대해 알게되었습니다. 이 신기술에 대해 더 잘 알고 싶고
@@ -69,7 +69,7 @@ function About() {
           .
         </WillText>
       </Fade>
-      <Fade delay={500} when={start} bottom distance="10px" duration={800}>
+      <Fade delay={300} when={start} bottom distance="10px" duration={800}>
         <Img src="img/mern.png" />
       </Fade>
     </Container>

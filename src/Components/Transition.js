@@ -18,6 +18,7 @@ const Container = styled.div`
   border-top-right-radius: ${(props) => props.innerHeight}px;
   position: relative;
   position: absolute;
+  z-index: -10;
 `
 
 const Center = styled.div`
@@ -29,6 +30,7 @@ const Center = styled.div`
   bottom: -500px;
   left: 50%;
   margin: -500px 0 0 -500px;
+  z-index: -5;
 `
 
 const Title = styled.div`
