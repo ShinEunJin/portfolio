@@ -28,8 +28,8 @@ const ImgColumn = styled.div`
 
 const Img = styled.img`
   border-radius: 50%;
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   margin-bottom: 30px;
 `
@@ -66,7 +66,7 @@ function IndexBoard(props) {
   return (
     <Container>
       <ImgColumn>
-        <Img src="img/원재.png" />
+        <Img src="img/증명사진.jpg" />
         <Name>SHIN EUN JIN</Name>
         <SubName>
           <span style={{ color: "green" }}>M</span>

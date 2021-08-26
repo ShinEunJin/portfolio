@@ -6,6 +6,7 @@ import { useLocation, Switch, Route } from "react-router-dom"
 import About from "../Pages/About/About"
 import Skill from "../Pages/Skill/Skill"
 import Home from "../Pages/Home/Home"
+import Project from "../Pages/Project/Project"
 
 const innerHeight = window.innerHeight
 
@@ -64,6 +65,7 @@ function Transition() {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/skill" component={Skill} />
+            <Route path="/project" component={Project} />
           </Switch>
         </Container>
       </CSSTransition>
