@@ -7,6 +7,7 @@ import About from "../Pages/About/About"
 import Skill from "../Pages/Skill/Skill"
 import Home from "../Pages/Home/Home"
 import Project from "../Pages/Project/Project"
+import Contact from "../Pages/Contact/Contact"
 
 const innerHeight = window.innerHeight
 
@@ -40,7 +41,7 @@ const Title = styled.div`
   font-size: 120px;
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 35%;
 `
 
 function Transition() {
@@ -66,6 +67,7 @@ function Transition() {
             <Route path="/about" component={About} />
             <Route path="/skill" component={Skill} />
             <Route path="/project" component={Project} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </Container>
       </CSSTransition>

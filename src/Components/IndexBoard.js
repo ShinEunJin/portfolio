@@ -88,9 +88,6 @@ function IndexBoard(props) {
         <Index current={props.location.pathname === "/project"}>
           <SLink to="/project">Project</SLink>
         </Index>
-        <Index current={props.location.pathname === "/study"}>
-          <SLink to="/study">Study</SLink>
-        </Index>
         <Index current={props.location.pathname === "/contact"}>
           <SLink to="/contact">Contact</SLink>
         </Index>
