@@ -53,7 +53,7 @@ function Transition() {
         unmountOnExit={true}
         key={location.pathname}
         timeout={1200}
-        classNames="test"
+        classNames="transition"
       >
         <Container innerHeight={innerHeight}>
           <Center></Center>

@@ -27,7 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://portfolio.shineunjin.io",
+  "homepage": "https://shineunjin.github.io/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
