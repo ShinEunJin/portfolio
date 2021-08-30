@@ -40,8 +40,7 @@ function About() {
     <Container>
       <Fade when={start} top distance="10px" duration={800}>
         <Will>
-          저와 맞지않는다면 제가 맞추겠습니다.
-          <br /> 부족하다면 채우겠습니다.
+          부족하다면 채우겠습니다.
           <br /> 물러서지 않습니다.
         </Will>
       </Fade>

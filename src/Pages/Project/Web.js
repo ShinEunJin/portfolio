@@ -105,7 +105,6 @@ function Web() {
             </span>
             <DescriptionLink target="_blank" href="http://bigyeong.com">
               Link
-              <Transition></Transition>
             </DescriptionLink>
             <DescriptionLink
               target="_blank"

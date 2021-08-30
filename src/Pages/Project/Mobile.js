@@ -18,6 +18,7 @@ const Img = styled.img`
   height: 400px;
   &:hover {
     cursor: pointer;
+    border: 1px solid gray;
   }
   transition: all 1s cubic-bezier(0.46, 0, 0.22, 0.99);
   box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.3);
